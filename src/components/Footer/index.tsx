@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
         <br />
         <p className="text-sm text-gray-500  dark:text-gray-400">再次感谢您的支持和关注！</p>
         <br />
-        <img className="ml-1 w-2/6 " src="https://qwerty.kaiyi.cool/weChat-group.jpg" alt="weChat-group" />
+        <img className="ml-1 w-2/6 " src="https://niuma.top/weChat-group.jpg" alt="weChat-group" />
         <br />
       </InfoPanel>
 
@@ -138,7 +138,13 @@ const Footer: React.FC = () => {
         <p className="text-sm text-gray-500 dark:text-gray-400">Tips: 从小红书“我”的左上角点击 三 找到 扫一扫</p>
         <br />
       </InfoPanel>
-
+      <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
+        专注的做一件事情，慢一点，可能更快
+      </footer>
+      <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
+        牛马程序员官方网站：<a href="https://itniuma.com">itniuma.com</a>
+        TS全栈学习路线：<a href="https://nodeing.com/path">nodeing.com</a>
+      </footer>
       <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" aria-label="前往 GitHub 项目主页">
           <IconGithub fontSize={15} className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" />
@@ -205,12 +211,6 @@ const Footer: React.FC = () => {
           <IconMail fontSize={16} className="text-gray-500 hover:text-indigo-400 dark:text-gray-400 dark:hover:text-indigo-400" />
         </a>
 
-        <Tooltip content="中国大陆镜像">
-          <a href="https://kaiyiwing.gitee.io/qwerty-learner" target="_self" title="前往中国大陆镜像">
-            <IconFlagChina fontSize={16} />
-          </a>
-        </Tooltip>
-
         <button
           className="cursor-pointer text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
           type="button"
@@ -221,17 +221,11 @@ const Footer: React.FC = () => {
         >
           @ Qwerty Learner
         </button>
-
-        <a
-          className="cursor-pointer text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-          href="https://beian.miit.gov.cn"
-          target="_blank"
-          rel="noreferrer"
-        >
-          鲁ICP备2022030649号
-        </a>
         <span className="select-none rounded bg-slate-200 px-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-400">
-          Build <span className="select-all">{LATEST_COMMIT_HASH}</span>
+          本网站基于开源软件Qwerty Learner部署
+        </span>
+        <span className="select-none rounded bg-slate-200 px-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+          站长微信：nodeing-cn ，一起打卡学英语，找远程工作
         </span>
       </footer>
     </>
